@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --pink: #e06ba8;
+            --purple: #9f5da8;
+            --light-gray: #c7c7c7;
+            --sm: 1.4rem;
+            --md: 1.8rem;
+            --lg: 2.2rem;
+            --xl: 2.6rem;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-size: var(--md);
+            padding: 0.5rem 2rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        header ul {
+            list-style: none;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        header li {
+            display: inline-block;
+            padding: 0 1rem;
+        }
+
+        header li>a {
+            text-decoration: none;
+            color: var(--light-gray);
+            padding: 0.8rem;
+        }
+
+        header li>a:hover {
+            color: var(--pink);
+            border: 1px solid var(--pink);
+            border-radius: 0.8rem;
+            background-color: #c7c7c720;
+        }
+
+        .logo {
+            width: 25rem;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+
+        .menu {
+            display: none;
+            height: 5rem;
+            align-items: center;
+        }
+
+        @media (max-width: 680px) {
+            header ul {
+                display: none;
+            }
+
+            .menu {
+                display: flex;
+            }
+
+            .logo {
+                width: 150px;
+            }
+
+            .logo img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="ADN SPA Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">Opcion</a></li>
+                <li><a href="#">Opcion</a></li>
+                <li><a href="#">Opcion</a></li>
+                <li><a href="#">Opcion</a></li>
+                <li><a href="#">Opcion</a></li>
+            </ul>
+            <figure class="menu">
+                <img src="/icons/icon_menu.svg" alt="menu icon">
+            </figure>
+        </nav>
+    </header>
+</body>
+
+</html>
